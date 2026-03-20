@@ -1,0 +1,9 @@
+
+@use 'variables' as *;
+
+body {
+  background-color: $color-background;
+  text-align: center;
+  margin: auto;
+  font-family: $font-text;
+}

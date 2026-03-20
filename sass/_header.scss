@@ -1,0 +1,16 @@
+
+@use 'variables' as *;
+
+.header {
+  background-color: $color-white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+
+&__logo {
+height: auto;
+width: 197px;
+padding: 14px;
+
+ }
+}

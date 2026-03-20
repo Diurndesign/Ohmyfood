@@ -3,57 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
-<body>
-  <header class="__header">
-    <img src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
-    <div>
-      <i>icone</i>
-      <p>Paris, Belleville</p>
-    </div>
-  </header>
+  <body>
+<header class="header">
+  <img class="header__logo" src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
+</header>
+<div class="location">
+  <i class="fa-solid fa-location-dot"></i>
+  <p>Paris, Belleville</p>
+</div>
 
-  <main>
+    <main>
+      <section>
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <a class="btn" href="#restaurants">Explorer nos restaurants</a>
+      </section>
 
-    <section>
-      <h1>Réservez le menu qui vous convient</h1>
-      <p>Découvrez des restaurants d'exception</p>
-      <a href="#restaurants">Explorer nos restaurants</a>
-    </section>
+      <section>
+        <h2>Fonctionnement</h2>
+        <div><p>Choisissez un restaurant</p></div>
+        <div><p>Composez votre menu</p></div>
+        <div><p>Dégustez au restaurant</p></div>
+      </section>
 
-    <section>
-      <h2>Fonctionnement</h2>
-      <div><p>Choisissez un restaurant</p></div>
-      <div><p>Composez votre menu</p></div>
-      <div><p>Dégustez au restaurant</p></div>
-    </section>
+      <section class="restaurants" id="restaurants">
+  <h2 class="restaurants__title">Restaurants</h2>
 
-    <section>
-      <h2>Restaurants</h2>
-      <div><img src="./assets/images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût"><h3>La palette du goût</h3><p>Ménilmontant</p></div>
-      <div><img src="./assets/images/restaurants/la_note_enchantee.jpg" alt="La note enchantée"><h3>La note enchantée</h3><p>Charonne</p></div>
-      <div><img src="./assets/images/restaurants/a_la_française.jpg" alt="A la française"><h3>A la française</h3><p>Cité Rouge</p></div>
-      <div><img src="./assets/images/restaurants/Le_delice_des_sens.jpg" alt="Le délice des sens"><h3>Le délice des sens</h3><p>Folie-Méricourt</p></div>
-    </section>
+  <article class="card">
+    <img src="./assets/images/restaurants/la_palette_du_gout.jpg" 
+         alt="La palette du goût"/>
+    <h3 class="card__name">La palette du goût</h3>
+    <p class="card__location">Ménilmontant</p>
+  </article>
 
-  </main>
+  <article class="card">
+    <img src="./assets/images/restaurants/la_note_enchantee.jpg" 
+         alt="La note enchantée"/>
+    <h3 class="card__name">La note enchantée</h3>
+    <p class="card__location">Charonne</p>
+  </article>
 
-  <footer>
-    <img src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
-    <nav>
-      <ul>
-        <li><a href="#">Proposer un restaurant</a></li>
-        <li><a href="#">Devenir partenaire</a></li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </footer>
+  <article class="card">
+    <img src="./assets/images/restaurants/a_la_française.jpg" 
+         alt="La palette du goût"/>
+    <h3 class="card__name">A la francaise</h3>
+    <p class="card__location">Cité Rouge</p>
+  </article>
 
-</body>
+  <article class="card">
+    <img src="./assets/images/restaurants/Le_delice_des_sens.jpg" 
+         alt="La note enchantée"/>
+    <h3 class="card__name">Le délice des sens</h3>
+    <p class="card__location">Folie-Méricourt</p>
+  </article>
+  </section>
+    </main>
+
+    <footer>
+      <img src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
+      <nav>
+        <ul>
+          <li><a href="#">Proposer un restaurant</a></li>
+          <li><a href="#">Devenir partenaire</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

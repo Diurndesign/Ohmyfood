@@ -1,3 +1,43 @@
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}/*# sourceMappingURL=style.css.map */
+  background-color: #F6F6F6;
+  text-align: center;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+.header__logo {
+  height: auto;
+  width: 197px;
+  padding: 14px;
+}
+
+.location {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  padding: 10px 0;
+  gap: 8px;
+}
+
+.btn {
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+  font-size: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

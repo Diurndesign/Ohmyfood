@@ -1,12 +1,13 @@
-// Color
+// Les variables — liste de valeurs (couleurs, texte ...)
+// Pas de @use ici
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$color-new:#008766;
-$color-location:#EAEAEA;
+$color-tertiary : #99E2D0;
 $color-background: #F6F6F6;
+$color-location: #EAEAEA;
 $color-footer: #353535;
+$color-white: #FFFFFF;
 
-// Typo
-$font-title: 'Shrikhand', sans-serif;
+$font-title: 'Shrikhand';
 $font-text: 'Roboto', sans-serif;
