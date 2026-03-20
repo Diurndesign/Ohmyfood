@@ -8,9 +8,8 @@
 ## Technologies utilisées
 - **HTML5**
 - **SCSS**
-- **Git/GitHub**
-
-### Typographie:
+- **Git/GitHub
+### Typo
 - **Logo et titres :** Shrikhand 
 - **Texte :** Roboto 
 
@@ -21,6 +20,22 @@
 - Texte : `#008766`
 - Fond : `#F6F6F6`
 - Footer : `#353535`
+
+# Installation
+
+```bash
+npm i
+```
+
+## Compilation SCSS
+
+```bash
+npm run sass
+```
+
+
+
+
 
 
 

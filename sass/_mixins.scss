@@ -1,8 +1,10 @@
-@use 'variables' as*;
+
+@use 'variables' as *;
 
 @mixin button {
   background: linear-gradient(to bottom, $color-secondary, $color-primary);
   color: white;
+  text-decoration: none;
   border: none;
   border-radius: 25px;
   padding: 15px 25px;

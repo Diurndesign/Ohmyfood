@@ -1,5 +1,4 @@
-
-@use 'variables' as *;
+@use "variables" as *;
 
 .header {
   background-color: $color-white;
@@ -7,10 +6,9 @@
   position: relative;
   z-index: 1;
 
-&__logo {
-height: auto;
-width: 197px;
-padding: 14px;
-
- }
+  &__logo {
+    height: auto;
+    width: 197px;
+    padding: 14px;
+  }
 }

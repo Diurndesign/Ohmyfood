@@ -1,7 +1,18 @@
-
-@use 'variables' as *;
-@use 'mixins' as *;
+@use "variables" as *;
+@use "mixins" as *;
 
 .btn {
   @include button;
+}
+
+.hero {
+  &__title {
+    font-family: $font-text;
+    font-size: 24px;
+
+    &__subtitle {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
 }
