@@ -3,7 +3,7 @@
 
 
 # Description
-**Site de réservation de menus de restaurants**
+**Site de réservation pour restaurants**
 
 ## Technologies utilisées
 - **HTML5**
