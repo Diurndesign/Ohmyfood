@@ -1,7 +1,7 @@
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" src="./assets/images/logo/ohmyfood_white.png"/>
-  <img src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" width="200"/>
+  <img src="./assets/images/logo/ohmyfood_white.png" alt="Logo Ohmyfood" width="300"/>
+  <img src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" width="300"/>
 </picture>
 
 # Ohmyfood
@@ -27,8 +27,7 @@ L'objectif du projet est d'intégrer une maquette mobile-first en HTML/SCSS en r
 ## Aperçu
 
 <picture>
-  <source media="Ohmyfood presentation" src="./assets/images/logo/ohmyfood_presentation.png"
-alt="Ohmyfood Presentation" height="300"/>
+  <img src="./assets/images/logo/ohmyfood_presentation.png" alt="Ohmyfood" height="300"/>
 </picture>
 
 ---
