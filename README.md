@@ -27,7 +27,7 @@ L'objectif du projet est d'intégrer une maquette mobile-first en HTML/SCSS en r
 ## Aperçu
 
 <picture>
-  <img src="./assets/images/logo/ohmyfood_presentation.png" alt="Ohmyfood" height="300"/>
+  <img src="./assets/images/logo/Ohmyfood_presentation.png" alt="Ohmyfood" height="300"/>
 </picture>
 
 ---
