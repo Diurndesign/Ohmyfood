@@ -1,6 +1,5 @@
 <div align="center">
 <picture>
-  <img src="./assets/images/logo/ohmyfood_white.png" alt="Logo Ohmyfood" width="300"/>
   <img src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" width="300"/>
 </picture>
 
@@ -26,11 +25,7 @@ L'objectif du projet est d'intégrer une maquette mobile-first en HTML/SCSS en r
 
 ## Aperçu
 
-<picture>
-  <img src="./assets/images/logo/Ohmyfood_presentation.png" alt="Ohmyfood" height="300"/>
-</picture>
-
----
+![Presentation Ohmyfoof](./assets/images/logo/Ohmyfood_presentation.png)
 
 ## Typographie
 
@@ -45,15 +40,15 @@ L'objectif du projet est d'intégrer une maquette mobile-first en HTML/SCSS en r
 
 | Nom        | Hex       |
 | ---------- | --------- |
-| Primary    | `#9356dc` |
-| Secondary  | `#ff79da` |
-| Tertiary   | `#99e2d0` |
+| Primary    | `#9356DC` |
+| Secondary  | `#FF79DA` |
+| Tertiary   | `#99E2D0` |
 | Badge      | `#008766` |
 | Background | `#f6f6f6` |
-| Location   | `#eaeaea` |
+| Location   | `#EAEAEA` |
 | Footer     | `#353535` |
-| White      | `#ffffff` |
-| Icons      | `#7e7e7e` |
+| White      | `#FFFFFF` |
+| Icons      | `#7E7E7E` |
 
 ---
 
