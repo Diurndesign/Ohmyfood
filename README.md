@@ -1,14 +1,17 @@
 <div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" src="./assets/images/logo/ohmyfood_white.png"/>
   <img src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" width="200"/>
+</picture>
 
-  # Ohmyfood
+# Ohmyfood
 
-  **Projet 4 — OpenClassrooms | Développeur Web**
+**Projet 4 — OpenClassrooms | Développeur Web**
 
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-  ![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-  ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-  ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
@@ -23,32 +26,35 @@ L'objectif du projet est d'intégrer une maquette mobile-first en HTML/SCSS en r
 
 ## Aperçu
 
-> 🔗 [Voir le site de référence](https://ohmyfood.mathisbarre.com/)
+<picture>
+  <source media="Ohmyfood presentation" src="./assets/images/logo/ohmyfood_presentation.png"
+alt="Ohmyfood Presentation" height="300"/>
+</picture>
 
 ---
 
 ## Typographie
 
-| Usage | Police |
-|---|---|
+| Usage         | Police                                                   |
+| ------------- | -------------------------------------------------------- |
 | Logo & titres | [Shrikhand](https://fonts.google.com/specimen/Shrikhand) |
-| Texte courant | [Roboto](https://fonts.google.com/specimen/Roboto) |
+| Texte courant | [Roboto](https://fonts.google.com/specimen/Roboto)       |
 
 ---
 
 ## Palette de couleurs
 
-| Nom | Couleur | Hex |
-|---|---|---|
-| Primary | ![#9356dc](https://via.placeholder.com/15/9356dc/9356dc.png) | `#9356dc` |
-| Secondary | ![#ff79da](https://via.placeholder.com/15/ff79da/ff79da.png) | `#ff79da` |
-| Tertiary | ![#99e2d0](https://via.placeholder.com/15/99e2d0/99e2d0.png) | `#99e2d0` |
-| Badge | ![#008766](https://via.placeholder.com/15/008766/008766.png) | `#008766` |
-| Background | ![#f6f6f6](https://via.placeholder.com/15/f6f6f6/f6f6f6.png) | `#f6f6f6` |
-| Location | ![#eaeaea](https://via.placeholder.com/15/eaeaea/eaeaea.png) | `#eaeaea` |
-| Footer | ![#353535](https://via.placeholder.com/15/353535/353535.png) | `#353535` |
-| White | ![#ffffff](https://via.placeholder.com/15/ffffff/ffffff.png) | `#ffffff` |
-| Icons | ![#7e7e7e](https://via.placeholder.com/15/7e7e7e/7e7e7e.png) | `#7e7e7e` |
+| Nom        | Hex       |
+| ---------- | --------- |
+| Primary    | `#9356dc` |
+| Secondary  | `#ff79da` |
+| Tertiary   | `#99e2d0` |
+| Badge      | `#008766` |
+| Background | `#f6f6f6` |
+| Location   | `#eaeaea` |
+| Footer     | `#353535` |
+| White      | `#ffffff` |
+| Icons      | `#7e7e7e` |
 
 ---
 
