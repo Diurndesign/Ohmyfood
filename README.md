@@ -23,10 +23,6 @@ L'objectif du projet est d'intégrer une maquette mobile-first en HTML/SCSS en r
 
 ---
 
-## Aperçu
-
-![Presentation Ohmyfoof](./assets/images/logo/Ohmyfood_presentation.png)
-
 ## Typographie
 
 | Usage         | Police                                                   |
