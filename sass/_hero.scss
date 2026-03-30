@@ -2,22 +2,22 @@
 @use "mixins" as *;
 
 .hero {
-  &__title {
-    font-family: $font-text;
-    margin-top: 39px;
-    font-size: 24px;
+  font-family: $font-text;
+  background-color: $color-background;
+  padding: 39px 24px;
+  text-align: center;
 
-    &__subtitle {
-      font-size: 18px;
-      font-weight: 300;
-    }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  &__subtitle {
+    color: $color-footer;
+    font-weight: 300;
+    font-size: 18px;
   }
 }
 
 .btn {
-  @include button;
-}
-
-.form{
-  @include rectangle;
+  @include btn;
 }

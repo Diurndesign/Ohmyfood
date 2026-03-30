@@ -1,13 +1,21 @@
-// Les variables — liste de valeurs (couleurs, texte ...)
+// Les variables — liste de valeurs (couleurs, texte ,tailles ...)
 // Pas de @use ici
 
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
+$color-badge: #008766;
 $color-background: #f6f6f6;
 $color-location: #eaeaea;
 $color-footer: #353535;
 $color-white: #ffffff;
+$color-icons: #7e7e7e;
 
-$font-title: "Shrikhand";
+$font-title: "Shrikhand", serif;
 $font-text: "Roboto", sans-serif;
+
+$border-radius-card: 16px;
+$border-radius-btn: 25px;
+$border-radius-step: 20px;
+
+$shadow-card: 0 4px 15px rgba(0, 0, 0, 0.15);

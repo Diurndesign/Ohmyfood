@@ -1,10 +1,15 @@
 // Le chef d'orchestre — il rassemble tout
 // C'est LUI qui sera compilé en main.css
 
-@use 'variables';
-@use 'body';
-@use 'header';
-@use 'location';
-@use 'hero';
-@use 'mixins';
+@use "variables";
+@use "mixins";
 
+@use "body";
+@use "header";
+@use "location";
+@use "hero";
+@use "function";
+@use "restaurants";
+@use "card";
+
+@use "footer";
