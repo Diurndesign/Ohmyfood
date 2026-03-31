@@ -1,11 +1,21 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 .card {
+  @include heart-hover;
+  @include animate;
+
+  &__heart-wrapper {
+    display: inline-block;
+    z-index: 1;         // ← passe au-dessus du ::before
+  }
+  
   position: relative; //L'élément est positionné selon le flux normal du document
   border-radius: $border-radius-card;
   box-shadow: $shadow-card; // fait ressortir les cards restaurants.
   overflow: hidden; // intégration de l'image
   background-color: $color-white;
+
   &__link {
     text-decoration: none;
     color: inherit; //hérite du noir du parent
@@ -27,7 +37,7 @@
     padding: 4px 12px;
     font-size: 14px;
     font-weight: 500;
-    border-radius: 14px; // colle mieux avec le design de l'application
+    border-radius: 10px; // colle mieux avec le design de l'application
   }
 
   &__body {
@@ -47,19 +57,5 @@
     font-size: 14px;
     font-weight: 300;
     margin: 0;
-  }
-
-  &__heart {
-    font-size: 20px;
-    color: $color-footer;
-    background-color: $color-white;
-    cursor: pointer;
-
-    &:hover {
-      background: linear-gradient(to bottom, $color-secondary, $color-primary);
-      -webkit-background-clip: text; // Safari, vieux Chrome
-      background-clip: text; // Standard moderne, découpe le dégradé exactement dans la forme du cœur — comme si c'était une lettre.
-      color: transparent;
-    }
   }
 }

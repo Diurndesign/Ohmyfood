@@ -1,12 +1,9 @@
 @use "variables" as *;
 
 @mixin btn {
+  @include animate;
   display: inline-block;
-  background: linear-gradient(
-    to bottom,
-    $color-secondary,
-    $color-primary
-  ); //crée une image qui est un dégradé entre deux ou plusieurs couleurs le long d'une ligne droite
+  background: linear-gradient(to bottom, $color-secondary, $color-primary);
   color: $color-white;
   text-decoration: none;
   border: none;
@@ -17,9 +14,68 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+@mixin animate {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 250ms,
+    box-shadow 250ms;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0); // transparent par défaut
+    transition: background-color 300ms;
+  }
+
+  &:hover::before {
+    background: rgba(255, 255, 255, 0.15); // voile blanc 15% au survol
+  }
+
+  &:hover {
+    transform: scale(1.01); // ← grandit de 5% au survol
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  }
+}
+
 @mixin badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 4px 12px;
+}
+
+@mixin heart-hover {
+  // Limite la zone cliquable/survolable à la taille du cœur uniquement
+  // Sans ça, le hover se déclencherait sur toute la largeur de la ligne
+  &__heart-wrapper {
+    display: inline-block;
+  }
+
+  // Coeur vide (outline) — affiché par défaut
+  &__heart--outline {
+    font-size: 20px;
+  }
+
+  // Coeur plein (solid) — caché par défaut, révélé au survol
+  &__heart--solid {
+    display: none; // caché par défaut
+    background: linear-gradient(to bottom, $color-primary, $color-secondary);
+    -webkit-background-clip: text; // compatibilité Safari — découpe le fond en forme d'icône
+    background-clip: text; // découpe le dégradé dans la forme de l'icône FontAwesome
+    color: transparent; // rend la couleur du texte invisible pour laisser voir le dégradé
+    font-size: 20px;
+  }
+
+  // Au survol du wrapper : cache le cœur vide
+  &__heart-wrapper:hover &__heart--outline {
+    display: none;
+  }
+
+  // Au survol du wrapper : révèle le cœur plein coloré
+  &__heart-wrapper:hover &__heart--solid {
+    display: block;
+  }
 }

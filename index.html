@@ -71,12 +71,22 @@
               alt="La palette du goût"
             />
             <span class="card__badge">Nouveau</span>
+            <!-- card__badge : Nouveau restaurant -->
+
             <div class="card__body">
               <div class="card__info">
+                <!-- card__info : contient le nom et la localisation du restaurant -->
                 <h3 class="card__name">La palette du goût</h3>
                 <p class="card__location">Ménilmontant</p>
               </div>
-              <i class="fa-regular fa-heart card__heart"></i>
+
+              <div class="card__heart-wrapper">
+                <!-- card__heart-wrapper : enveloppe les deux coeurs pour limiter la zone de survol -->
+                <i class="fa-regular fa-heart card__heart--outline"></i>
+                <!-- --outline : modificateur BEM → coeur vide, affiché par défaut -->
+                <i class="fa-solid fa-heart card__heart--solid"></i>
+                <!-- --solid : modificateur BEM → coeur plein coloré, caché par défaut, visible au survol -->
+              </div>
             </div>
           </article>
         </a>
@@ -89,12 +99,17 @@
               alt="La note enchantée"
             />
             <span class="card__badge">Nouveau</span>
+
             <div class="card__body">
               <div class="card__info">
                 <h3 class="card__name">La note enchantée</h3>
                 <p class="card__location">Charonne</p>
               </div>
-              <i class="fa-regular fa-heart card__heart"></i>
+
+              <div class="card__heart-wrapper">
+                <i class="fa-regular fa-heart card__heart--outline"></i>
+                <i class="fa-solid fa-heart card__heart--solid"></i>
+              </div>
             </div>
           </article>
         </a>
@@ -106,12 +121,17 @@
               src="./assets/images/restaurants/a_la_française.jpg"
               alt="La palette du goût"
             />
+
             <div class="card__body">
               <div class="card__info">
                 <h3 class="card__name">A la francaise</h3>
                 <p class="card__location">Cité Rouge</p>
               </div>
-              <i class="fa-regular fa-heart card__heart"></i>
+
+              <div class="card__heart-wrapper">
+                <i class="fa-regular fa-heart card__heart--outline"></i>
+                <i class="fa-solid fa-heart card__heart--solid"></i>
+              </div>
             </div>
           </article>
         </a>
@@ -121,14 +141,19 @@
             <img
               class="card__image"
               src="./assets/images/restaurants/Le_delice_des_sens.jpg"
-              alt="La note enchantée"
+              alt="Le délice des sens"
             />
+
             <div class="card__body">
               <div class="card__info">
                 <h3 class="card__name">Le délice des sens</h3>
                 <p class="card__location">Folie-Méricourt</p>
               </div>
-              <i class="fa-regular fa-heart card__heart"></i>
+
+              <div class="card__heart-wrapper">
+                <i class="fa-regular fa-heart card__heart--outline"></i>
+                <i class="fa-solid fa-heart card__heart--solid"></i>
+              </div>
             </div>
           </article>
         </a>
