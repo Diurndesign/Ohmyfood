@@ -7,9 +7,9 @@
 
   &__heart-wrapper {
     display: inline-block;
-    z-index: 1;         // ← passe au-dessus du ::before
+    z-index: 1; // ← passe au-dessus du ::before
   }
-  
+
   position: relative; //L'élément est positionné selon le flux normal du document
   border-radius: $border-radius-card;
   box-shadow: $shadow-card; // fait ressortir les cards restaurants.
@@ -57,5 +57,18 @@
     font-size: 14px;
     font-weight: 300;
     margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .card__link {
+    width: calc(50% - 50px);
+  }
+
+  .card {
+    border-radius: 15px; // légèrement différent du mobile
+    &__image {
+      height: 251px; // image plus haute sur desktop
+    }
   }
 }

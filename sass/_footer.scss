@@ -29,9 +29,28 @@
     gap: 10px; // espace entre icône et texte
   }
 
-   i {
+  i {
     font-size: 11px;
-    width: 13px;        // ← largeur fixe pour aligner tous les textes
+    width: 13px; // ← largeur fixe pour aligner tous les textes
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse; // ← logo à droite, nav à gauche
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    padding: 24px 40px;
+  }
+
+  .footer__list {
+    flex-direction: row; // ← liens en horizontal
+    gap: 24px;
+  }
+  .footer__logo {
+    padding-left: 40px; // ← espace entre le logo et le bord droit
   }
 }

@@ -56,3 +56,21 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: 768px) {
+  .function {
+    &__title {
+      margin-bottom: 32px;
+    }
+  }
+
+  .function__step {
+    display: flex;
+    flex: 1; // ← chaque étape prend le même espace
+  }
+
+  .function {
+    display: flex;
+    gap: 24px; // ← espace entre les 3 étapes
+  }
+}

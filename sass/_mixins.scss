@@ -1,29 +1,33 @@
 @use "variables" as *;
 
 @mixin btn {
-  @include animate;
+  @include animate; // permet au bouton d'avoir l'animation qui est dans le fichier mixins.scss
   display: inline-block;
-  background: linear-gradient(to bottom, $color-secondary, $color-primary);
-  color: $color-white;
+  background: linear-gradient(
+    to bottom,
+    $color-secondary,
+    $color-primary
+  ); // gére le dégradé du bouton
+  color: $color-white; // couleur du texte
   text-decoration: none;
   border: none;
   border-radius: 25px;
   padding: 15px 25px;
   font-size: 16px;
   font-weight: 500;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); // ombre sous le bouton
 }
 
 @mixin animate {
-  cursor: pointer;
-  position: relative;
+  cursor: pointer; // prend effet quand le curseur passe dessus
+  position: relative; // permet a ::before de le voir
   overflow: hidden;
   transition:
     transform 250ms,
     box-shadow 250ms;
 
   &::before {
-    content: "";
+    content: ""; // obligatoire pour que ::before existe dans le DOM
     position: absolute;
     inset: 0;
     background: rgba(255, 255, 255, 0); // transparent par défaut
