@@ -1,7 +1,6 @@
 <div align="center">
-<picture>
-  <img src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" width="300"/>
-</picture>
+  
+[Site en ligne](https://diurndesign.github.io/Ohmyfood/)
 
 # Ohmyfood
 
