@@ -1,0 +1,45 @@
+@use "variables" as *;
+
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation-name: loader-fade;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.loader__logo {
+  width: 200px;
+  animation: logo-appear 1.2s 0.3s both; //  les deux en même temps (avant et apres l'animation)
+}
+
+@keyframes logo-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes loader-fade {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -52,34 +52,41 @@
 }
 
 @mixin heart-hover {
-  // Limite la zone cliquable/survolable à la taille du cœur uniquement
-  // Sans ça, le hover se déclencherait sur toute la largeur de la ligne
   &__heart-wrapper {
     display: inline-block;
+    position: relative;
   }
 
-  // Coeur vide (outline) — affiché par défaut
+  // Cœur vide
+  // Il ne disparaît jamais, le cœur plein vient simplement se poser dessus
   &__heart--outline {
     font-size: 20px;
   }
 
-  // Coeur plein (solid) — caché par défaut, révélé au survol
+  // Cœur plein — superposé au-dessus du vide grâce à position: absolute
   &__heart--solid {
-    display: none; // caché par défaut
+    position: absolute; // sort du flux, se superpose au outline
+    top: 0; // aligné en haut…
+    left: 0; // …et à gauche du wrapper (= même position que le outline)
+
+    // --- Dégradé appliqué sur la forme de l'icône ---
     background: linear-gradient(to bottom, $color-primary, $color-secondary);
-    -webkit-background-clip: text; // compatibilité Safari — découpe le fond en forme d'icône
-    background-clip: text; // découpe le dégradé dans la forme de l'icône FontAwesome
-    color: transparent; // rend la couleur du texte invisible pour laisser voir le dégradé
+    -webkit-background-clip: text; // Safari : découpe le fond en forme de texte/icône
+    background-clip: text; // Standard : idem
+    color: transparent; // Cache la couleur du texte pour laisser voir le dégradé
+
     font-size: 20px;
+    // inset(haut droite bas gauche)
+    // 100% depuis le haut = tout est caché, comme un store baissé
+    clip-path: inset(100% 0 0 0);
+
+    // Quand clip-path changera, animer la transition sur 0.5s
+    transition: clip-path 1s ease-in-out;
   }
 
-  // Au survol du wrapper : cache le cœur vide
-  &__heart-wrapper:hover &__heart--outline {
-    display: none;
-  }
-
-  // Au survol du wrapper : révèle le cœur plein coloré
+  // Au survol : on remonte le "store" → inset(0) = plus rien n'est caché
+  // Le cœur plein se révèle de bas en haut progressivement
   &__heart-wrapper:hover &__heart--solid {
-    display: block;
+    clip-path: inset(0 0 0 0);
   }
 }

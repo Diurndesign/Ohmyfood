@@ -8,7 +8,7 @@
   margin-bottom: 66px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-tablet) {
   .restaurants {
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,15 +20,12 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $breakpoint-desktop) {
   .restaurants {
     max-width: 1080px;
-    margin: auto;
+    margin: 0 auto;
     padding: 40px;
     gap: 50px 100px;
-
-    &__title {
-      width: 100%;
-    }
+    justify-content: space-between;
   }
 }

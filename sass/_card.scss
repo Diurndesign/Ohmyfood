@@ -60,15 +60,8 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-tablet) {
   .card__link {
     width: calc(50% - 50px);
-  }
-
-  .card {
-    border-radius: 15px; // légèrement différent du mobile
-    &__image {
-      height: 251px; // image plus haute sur desktop
-    }
   }
 }

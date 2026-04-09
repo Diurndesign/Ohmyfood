@@ -57,20 +57,32 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-tablet) {
   .function {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
     &__title {
-      margin-bottom: 32px;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    &__step {
+      flex: 1;
     }
   }
+}
 
-  .function__step {
-    display: flex;
-    flex: 1; // ← chaque étape prend le même espace
-  }
-
+@media (min-width: $breakpoint-desktop) {
   .function {
-    display: flex;
-    gap: 24px; // ← espace entre les 3 étapes
+    padding: 40px 20px;
+
+    &__container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
   }
 }

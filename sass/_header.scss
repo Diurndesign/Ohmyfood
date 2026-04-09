@@ -5,11 +5,17 @@
   background-color: $color-white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
-  z-index: 1; //d'un élément positionné et de ses éléments enfants ou de ses éléments flexibles
+  z-index: 1; // assure que le header est au-dessus 
 
   &__logo {
     height: auto;
     width: 197px;
     padding: 14px;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .header {
+    position: static;
   }
 }

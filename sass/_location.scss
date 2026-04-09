@@ -13,5 +13,10 @@
   padding: 10px 0;
   gap: 8px;
   position: relative;
-  z-index: 0;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .location {
+    position: static;
+  }
 }
