@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="2400" viewBox="0 0 900 2400">
   <defs>
-  <style>@media(prefers-color-scheme:dark){#rmk-bg{fill:#0d1117}}@media(prefers-color-scheme:light){#rmk-bg{fill:#f6f6f6}}</style>
   <linearGradient id="grad-omf_1" x1="14.644660940672622%" y1="85.35533905932738%" x2="85.35533905932738%" y2="14.64466094067263%"><stop offset="0%" stop-color="#9356DC"/><stop offset="100%" stop-color="#FF79DA"/></linearGradient>
   <linearGradient id="grad-omf_202" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#9356DC"/><stop offset="100%" stop-color="#FF79DA"/></linearGradient>
   <linearGradient id="grad-omf_302" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#9356DC"/><stop offset="100%" stop-color="#FF79DA"/></linearGradient>
@@ -8,22 +7,19 @@
   <linearGradient id="grad-omf_502" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#9356DC"/><stop offset="100%" stop-color="#FF79DA"/></linearGradient>
   <linearGradient id="grad-omf_524" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#9356DC"/><stop offset="100%" stop-color="#FF79DA"/></linearGradient>
   </defs>
-  <rect id="rmk-bg" x="0" y="0" width="900" height="2400" fill="#f6f6f6"/>
+  <rect x="0" y="0" width="900" height="2400" fill="#f6f6f6"/>
 <rect x="0" y="0" width="900" height="280" fill="url(#grad-omf_1)"/>
 <ellipse cx="780" cy="50" rx="120" ry="120" fill="#FFFFFF" opacity="0.06"/>
 <ellipse cx="100" cy="220" rx="80" ry="80" fill="#FFFFFF" opacity="0.04"/>
 <text font-size="56" font-weight="400" font-family="Shrikhand, cursive" fill="#FFFFFF" text-anchor="middle">
     <tspan x="450" y="111">ohmyfood</tspan>
   </text>
-<text font-size="16" font-weight="300" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle" opacity="0.8">
-    <tspan x="450" y="134">PARIS</tspan>
-  </text>
 <text font-size="18" font-weight="400" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle">
     <tspan x="450" y="178">Projet 4 — OpenClassrooms | Développeur Web</tspan>
   </text>
 <rect x="300" y="210" width="300" height="36" rx="18" ry="18" fill="#FFFFFF" opacity="0.2"/>
 <text font-size="13" font-weight="500" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle">
-    <tspan x="450" y="226">RÉSERVATION GASTRONOMIQUE</tspan>
+    <tspan x="450" y="233">RÉSERVATION GASTRONOMIQUE</tspan>
   </text>
 <rect x="40" y="310" width="820" height="130" rx="16" ry="16" fill="#FFFFFF"/>
 <rect x="40" y="310" width="6" height="130" rx="3" ry="3" fill="#9356DC"/>
@@ -42,33 +38,24 @@
 <rect x="40" y="540" width="400" height="120" rx="16" ry="16" fill="#FFFFFF"/>
 <rect x="60" y="560" width="50" height="50" rx="12" ry="12" fill="#9356DC"/>
 <text font-size="22" font-weight="400" font-family="Shrikhand, cursive" fill="#FFFFFF" text-anchor="middle">
-    <tspan x="85" y="587">Aa</tspan>
+    <tspan x="85" y="591">Aa</tspan>
   </text>
 <text font-size="20" font-weight="400" font-family="Shrikhand, cursive" fill="#353535" text-anchor="start">
-    <tspan x="125" y="578">Shrikhand</tspan>
+    <tspan x="125" y="586">Shrikhand</tspan>
   </text>
 <text font-size="13" font-weight="400" font-family="Roboto, sans-serif" fill="#7E7E7E" text-anchor="start">
-    <tspan x="125" y="598">Logo &amp; titres</tspan>
-  </text>
-<rect x="125" y="615" width="80" height="24" rx="12" ry="12" fill="#9356DC" opacity="0.12"/>
-<text font-size="11" font-weight="500" font-family="Roboto, sans-serif" fill="#9356DC" text-anchor="middle">
-    <tspan x="165" y="629">Display</tspan>
+    <tspan x="125" y="606">Logo &amp; titres</tspan>
   </text>
 <rect x="460" y="540" width="400" height="120" rx="16" ry="16" fill="#FFFFFF"/>
 <rect x="480" y="560" width="50" height="50" rx="12" ry="12" fill="#FF79DA"/>
 <text font-size="22" font-weight="700" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle">
-    <tspan x="505" y="587">Aa</tspan>
+    <tspan x="505" y="591">Aa</tspan>
   </text>
 <text font-size="20" font-weight="700" font-family="Roboto, sans-serif" fill="#353535" text-anchor="start">
-    <tspan x="545" y="578">Roboto</tspan>
+    <tspan x="545" y="584">Roboto</tspan>
   </text>
 <text font-size="13" font-weight="400" font-family="Roboto, sans-serif" fill="#7E7E7E" text-anchor="start">
-    <tspan x="545" y="598">Texte courant</tspan>
-  </text>
-<rect x="545" y="615" width="120" height="24" rx="12" ry="12" fill="#FF79DA" opacity="0.12"/>
-<text font-size="11" font-weight="500" font-family="Roboto, sans-serif" fill="#FF79DA" text-anchor="middle">
-    <tspan x="605" y="629">300 · 400 · 500 ·</tspan>
-    <tspan x="605" y="643.3">700</tspan>
+    <tspan x="545" y="604">Texte courant</tspan>
   </text>
 <text font-size="28" font-weight="400" font-family="Shrikhand, cursive" fill="#353535" text-anchor="middle">
     <tspan x="450" y="728">Palette de couleurs</tspan>
@@ -154,7 +141,7 @@
     <tspan x="450" y="1058">Structure du projet</tspan>
   </text>
 <rect x="365" y="1072" width="170" height="4" rx="2" ry="2" fill="url(#grad-omf_402)"/>
-<rect x="40" y="1095" width="820" height="700" rx="16" ry="16" fill="#353535"/>
+<rect x="40" y="1095" width="820" height="762" rx="16" ry="16" fill="#353535"/>
 <rect x="40" y="1095" width="820" height="40" rx="16" ry="16" fill="#2a2a2a"/>
 <rect x="40" y="1119" width="820" height="16" fill="#2a2a2a"/>
 <ellipse cx="65" cy="1115" rx="7" ry="7" fill="#FF5F57"/>
@@ -163,114 +150,45 @@
 <text font-size="12" font-weight="400" font-family="Roboto, sans-serif" fill="#7E7E7E" text-anchor="middle">
     <tspan x="450" y="1112">ohmyfood — structure</tspan>
   </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#FF79DA" text-anchor="start">
-    <tspan x="70" y="1159">Ohmyfood-main/</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#9356DC" text-anchor="start">
-    <tspan x="70" y="1184">├── assets/</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#9356DC" text-anchor="start">
-    <tspan x="70" y="1209">│   ├── css/</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1234">│   │   ├── normalize.css</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1259">│   │   └── style.css            ← CSS compilé</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#9356DC" text-anchor="start">
-    <tspan x="70" y="1284">│   └── images/</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#9356DC" text-anchor="start">
-    <tspan x="70" y="1309">│       ├── logo/</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#9356DC" text-anchor="start">
-    <tspan x="70" y="1334">│       └── restaurants/</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#FF79DA" text-anchor="start">
-    <tspan x="70" y="1359">├── sass/</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1384">│   ├── _variables.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1409">│   ├── _mixins.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1434">│   ├── _body.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1459">│   ├── _header.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1484">│   ├── _location.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1509">│   ├── _hero.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1534">│   ├── _function.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1559">│   ├── _card.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1584">│   ├── _restaurants.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1609">│   ├── _footer.scss</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#FF79DA" text-anchor="start">
-    <tspan x="70" y="1634">│   └── main.scss               ← point d'entrée SCSS</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#FFFFFF" text-anchor="start">
-    <tspan x="70" y="1659">├── index.html</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1684">├── package.json</tspan>
-  </text>
-<text font-size="14" font-weight="400" font-family="'Roboto Mono', 'Courier New', monospace" fill="#99E2D0" text-anchor="start">
-    <tspan x="70" y="1709">└── README.md</tspan>
-  </text>
 <text font-size="28" font-weight="400" font-family="Shrikhand, cursive" fill="#353535" text-anchor="middle">
-    <tspan x="450" y="1878">Technologies</tspan>
+    <tspan x="450" y="1887">Technologies</tspan>
   </text>
-<rect x="385" y="1892" width="130" height="4" rx="2" ry="2" fill="url(#grad-omf_502)"/>
-<rect x="82" y="1920" width="170" height="80" rx="16" ry="16" fill="#FFFFFF"/>
-<rect x="82" y="1920" width="170" height="44" rx="16" ry="16" fill="#E44D26"/>
-<rect x="82" y="1948" width="170" height="16" fill="#E44D26"/>
+<rect x="385" y="1899" width="130" height="4" rx="2" ry="2" fill="url(#grad-omf_502)"/>
+<rect x="82" y="1931" width="170" height="80" rx="16" ry="16" fill="#FFFFFF"/>
+<rect x="82" y="1931" width="170" height="44" rx="16" ry="16" fill="#E44D26"/>
+<rect x="82" y="1959" width="170" height="16" fill="#E44D26"/>
 <text font-size="18" font-weight="700" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle">
-    <tspan x="167" y="1944">HTML5</tspan>
+    <tspan x="167" y="1955">HTML5</tspan>
   </text>
 <text font-size="12" font-weight="400" font-family="Roboto, sans-serif" fill="#7E7E7E" text-anchor="middle">
-    <tspan x="167" y="1984">Structure</tspan>
+    <tspan x="167" y="1995">Structure</tspan>
   </text>
-<rect x="272" y="1920" width="170" height="80" rx="16" ry="16" fill="#FFFFFF"/>
-<rect x="272" y="1920" width="170" height="44" rx="16" ry="16" fill="#CF649A"/>
-<rect x="272" y="1948" width="170" height="16" fill="#CF649A"/>
+<rect x="272" y="1931" width="170" height="80" rx="16" ry="16" fill="#FFFFFF"/>
+<rect x="272" y="1931" width="170" height="44" rx="16" ry="16" fill="#CF649A"/>
+<rect x="272" y="1959" width="170" height="16" fill="#CF649A"/>
 <text font-size="18" font-weight="700" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle">
-    <tspan x="357" y="1944">SCSS</tspan>
+    <tspan x="357" y="1955">SCSS</tspan>
   </text>
 <text font-size="12" font-weight="400" font-family="Roboto, sans-serif" fill="#7E7E7E" text-anchor="middle">
-    <tspan x="357" y="1984">Styles &amp; Animations</tspan>
+    <tspan x="357" y="1995">Styles &amp; Animations</tspan>
   </text>
-<rect x="462" y="1920" width="170" height="80" rx="16" ry="16" fill="#FFFFFF"/>
-<rect x="462" y="1920" width="170" height="44" rx="16" ry="16" fill="#264DE4"/>
-<rect x="462" y="1948" width="170" height="16" fill="#264DE4"/>
+<rect x="462" y="1931" width="170" height="80" rx="16" ry="16" fill="#FFFFFF"/>
+<rect x="462" y="1931" width="170" height="44" rx="16" ry="16" fill="#264DE4"/>
+<rect x="462" y="1959" width="170" height="16" fill="#264DE4"/>
 <text font-size="18" font-weight="700" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle">
-    <tspan x="547" y="1944">CSS3</tspan>
+    <tspan x="547" y="1955">CSS3</tspan>
   </text>
 <text font-size="12" font-weight="400" font-family="Roboto, sans-serif" fill="#7E7E7E" text-anchor="middle">
-    <tspan x="547" y="1984">Compilé</tspan>
+    <tspan x="547" y="1995">Compilé</tspan>
   </text>
-<rect x="652" y="1920" width="170" height="80" rx="16" ry="16" fill="#FFFFFF"/>
-<rect x="652" y="1920" width="170" height="44" rx="16" ry="16" fill="#A259FF"/>
-<rect x="652" y="1948" width="170" height="16" fill="#A259FF"/>
+<rect x="652" y="1931" width="170" height="80" rx="16" ry="16" fill="#FFFFFF"/>
+<rect x="652" y="1931" width="170" height="44" rx="16" ry="16" fill="#A259FF"/>
+<rect x="652" y="1959" width="170" height="16" fill="#A259FF"/>
 <text font-size="18" font-weight="700" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle">
-    <tspan x="737" y="1944">Figma</tspan>
+    <tspan x="737" y="1955">Figma</tspan>
   </text>
 <text font-size="12" font-weight="400" font-family="Roboto, sans-serif" fill="#7E7E7E" text-anchor="middle">
-    <tspan x="737" y="1984">Maquette</tspan>
+    <tspan x="737" y="1995">Maquette</tspan>
   </text>
 <text font-size="28" font-weight="400" font-family="Shrikhand, cursive" fill="#353535" text-anchor="middle">
     <tspan x="450" y="2068">Points clés</tspan>
@@ -336,5 +254,133 @@
   </text>
 <text font-size="11" font-weight="300" font-family="Roboto, sans-serif" fill="#7E7E7E" text-anchor="middle">
     <tspan x="450" y="2381">Projet 4 — OpenClassrooms · Développeur Web</tspan>
+  </text>
+<text font-size="13" font-weight="400" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle" opacity="0.5">
+    <tspan x="70" y="1159">▾</tspan>
+  </text>
+<text font-size="14" font-weight="700" font-family="'Roboto Mono', monospace" fill="#9356DC" text-anchor="start">
+    <tspan x="79" y="1160">assets</tspan>
+  </text>
+<text font-size="13" font-weight="400" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle" opacity="0.5">
+    <tspan x="94" y="1182">▾</tspan>
+  </text>
+<text font-size="14" font-weight="700" font-family="'Roboto Mono', monospace" fill="#9356DC" text-anchor="start">
+    <tspan x="103" y="1183">css</tspan>
+  </text>
+<text font-size="13" font-weight="400" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle" opacity="0.5">
+    <tspan x="94" y="1205">▾</tspan>
+  </text>
+<text font-size="14" font-weight="700" font-family="'Roboto Mono', monospace" fill="#9356DC" text-anchor="start">
+    <tspan x="103" y="1206">images</tspan>
+  </text>
+<text font-size="13" font-weight="400" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle" opacity="0.5">
+    <tspan x="94" y="1228">▾</tspan>
+  </text>
+<text font-size="14" font-weight="700" font-family="'Roboto Mono', monospace" fill="#9356DC" text-anchor="start">
+    <tspan x="103" y="1229">node_modules</tspan>
+  </text>
+<text font-size="13" font-weight="400" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle" opacity="0.5">
+    <tspan x="70" y="1251">▾</tspan>
+  </text>
+<text font-size="14" font-weight="700" font-family="'Roboto Mono', monospace" fill="#9356DC" text-anchor="start">
+    <tspan x="79" y="1252">restaurants</tspan>
+  </text>
+<ellipse cx="95" cy="1270" rx="4" ry="4" fill="#FF79DA" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1274">a-la-francaise.html</tspan>
+  </text>
+<ellipse cx="95" cy="1293" rx="4" ry="4" fill="#FF79DA" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1297">la-note-enchantee.html</tspan>
+  </text>
+<ellipse cx="95" cy="1316" rx="4" ry="4" fill="#FF79DA" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1320">la-palette-du-gout.html</tspan>
+  </text>
+<ellipse cx="95" cy="1339" rx="4" ry="4" fill="#FF79DA" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1343">le-delice-des-sens.html</tspan>
+  </text>
+<text font-size="13" font-weight="400" font-family="Roboto, sans-serif" fill="#FFFFFF" text-anchor="middle" opacity="0.5">
+    <tspan x="70" y="1366">▾</tspan>
+  </text>
+<text font-size="14" font-weight="700" font-family="'Roboto Mono', monospace" fill="#9356DC" text-anchor="start">
+    <tspan x="79" y="1367">sass</tspan>
+  </text>
+<ellipse cx="95" cy="1385" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1389">_body.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1408" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1412">_card.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1431" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1435">_footer.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1454" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1458">_function.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1477" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1481">_header.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1500" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1504">_hero.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1523" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1527">_loader.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1546" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1550">_location.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1569" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1573">_menu.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1592" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1596">_mixins.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1615" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1619">_restaurants.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1638" rx="4" ry="4" fill="#CF649A" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1642">_variables.scss</tspan>
+  </text>
+<ellipse cx="95" cy="1661" rx="4" ry="4" fill="#FF79DA" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="105" y="1665">main.scss</tspan>
+  </text>
+<ellipse cx="71" cy="1684" rx="4" ry="4" fill="#7E7E7E" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="81" y="1688">.gitignore</tspan>
+  </text>
+<ellipse cx="71" cy="1707" rx="4" ry="4" fill="#FF79DA" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="81" y="1711">index.html</tspan>
+  </text>
+<ellipse cx="71" cy="1730" rx="4" ry="4" fill="#99E2D0" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="81" y="1734">ohmyfood-presentation.svg</tspan>
+  </text>
+<ellipse cx="71" cy="1753" rx="4" ry="4" fill="#FEBC2E" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="81" y="1757">package-lock.json</tspan>
+  </text>
+<ellipse cx="71" cy="1776" rx="4" ry="4" fill="#FEBC2E" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="81" y="1780">package.json</tspan>
+  </text>
+<ellipse cx="71" cy="1799" rx="4" ry="4" fill="#38bdf8" opacity="0.85"/>
+<text font-size="13" font-weight="400" font-family="'Roboto Mono', monospace" fill="#CCCCCC" text-anchor="start">
+    <tspan x="81" y="1803">README.md</tspan>
   </text>
 </svg>
