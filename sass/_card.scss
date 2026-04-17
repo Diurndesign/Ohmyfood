@@ -10,7 +10,7 @@
     z-index: 1; // ← passe au-dessus du ::before
   }
 
-  position: relative; //L'élément est positionné selon le flux normal du document
+  position: relative; // permet a l'élément d'être décalé par rapport à son emplacement normal
   border-radius: $border-radius-card;
   box-shadow: $shadow-card; // fait ressortir les cards restaurants.
   overflow: hidden; // intégration de l'image
@@ -18,7 +18,7 @@
 
   &__link {
     text-decoration: none;
-    color: inherit; //hérite du noir du parent
+    color: inherit; // hérite de la couleur du parent (ici, le blanc de la card)
     display: block;
   }
 
@@ -29,15 +29,15 @@
   }
 
   &__badge {
+    @include badge; // padding 4px 12px + flex centré — défini dans _mixins.scss
     position: absolute;
     top: 12px;
     right: 12px;
     background-color: $color-tertiary;
     color: $color-badge;
-    padding: 4px 12px;
     font-size: 14px;
     font-weight: 500;
-    border-radius: 10px; // colle mieux avec le design de l'application
+    border-radius: 10px;
   }
 
   &__body {

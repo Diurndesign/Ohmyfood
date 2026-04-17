@@ -11,7 +11,7 @@
   color: $color-white; // couleur du texte
   text-decoration: none;
   border: none;
-  border-radius: 25px;
+  border-radius: $border-radius-btn;
   padding: 15px 25px;
   font-size: 16px;
   font-weight: 500;
@@ -40,7 +40,7 @@
 
   &:hover {
     transform: scale(1.01); // ← grandit de 5% au survol
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: $shadow-hover;
   }
 }
 
@@ -54,39 +54,52 @@
 @mixin heart-hover {
   &__heart-wrapper {
     display: inline-block;
-    position: relative;
+    position: relative; // ancre le checkbox absolu
+    cursor: pointer;
   }
 
-  // Cœur vide
-  // Il ne disparaît jamais, le cœur plein vient simplement se poser dessus
+  // Checkbox invisible — couvre toute la surface du cœur
+  // Même technique que menu-item pour capter le clic sans interférer avec l'affichage
+  &__heart-checkbox {
+    position: absolute;
+    inset: 0; // couvre exactement le wrapper
+    opacity: 0; // invisible mais cliquable
+    cursor: pointer;
+    z-index: 2; // au-dessus des icônes pour capter le clic
+    margin: 0;
+  }
+
+  // Cœur vide — visible par défaut
   &__heart--outline {
     font-size: 20px;
   }
 
-  // Cœur plein — superposé au-dessus du vide grâce à position: absolute
+  // Cœur plein — superposé, caché par défaut via clip-path
   &__heart--solid {
     position: absolute; // sort du flux, se superpose au outline
-    top: 0; // aligné en haut…
-    left: 0; // …et à gauche du wrapper (= même position que le outline)
+    top: 0;
+    left: 0;
 
-    // --- Dégradé appliqué sur la forme de l'icône ---
+    // Dégradé appliqué en forme d'icône (technique background-clip: text)
     background: linear-gradient(to bottom, $color-primary, $color-secondary);
-    -webkit-background-clip: text; // Safari : découpe le fond en forme de texte/icône
-    background-clip: text; // Standard : idem
-    color: transparent; // Cache la couleur du texte pour laisser voir le dégradé
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 
     font-size: 20px;
-    // inset(haut droite bas gauche)
-    // 100% depuis le haut = tout est caché, comme un store baissé
-    clip-path: inset(100% 0 0 0);
-
-    // Quand clip-path changera, animer la transition sur 0.5s
-    transition: clip-path 1s ease-in-out;
+    clip-path: inset(100% 0 0 0); // 100% = complètement caché (store baissé)
+    transition: clip-path 0.5s ease-in-out; // animation de révélation
   }
 
-  // Au survol : on remonte le "store" → inset(0) = plus rien n'est caché
-  // Le cœur plein se révèle de bas en haut progressivement
-  &__heart-wrapper:hover &__heart--solid {
+  @media (hover: hover) {
+    // cible les appareils qui supportent le hover (exclut les mobiles)
+    &__heart-wrapper:hover &__heart--solid {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  // Au clic : checkbox coché → cœur reste visible en permanence
+  &__heart-checkbox:checked ~ &__heart--solid {
     clip-path: inset(0 0 0 0);
   }
 }

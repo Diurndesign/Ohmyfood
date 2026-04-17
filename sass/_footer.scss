@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: $breakpoint-tablet) {
+@media (min-width: $breakpoint-desktop) {
   .footer {
     display: flex;
     flex-direction: row-reverse; // logo à droite, nav à gauche
@@ -50,6 +50,7 @@
     flex-direction: row; // liens en horizontal
     gap: 24px;
   }
+
   .footer__logo {
     padding-left: 40px; // espace entre le logo et le bord droit
   }

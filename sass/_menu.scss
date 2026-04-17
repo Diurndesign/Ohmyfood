@@ -1,0 +1,226 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// HEADER MENU : retour + logo centré
+.header--menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header__back {
+    position: absolute; // sort du flux pour ne pas décaler le logo
+    left: 24px;
+    color: $color-footer;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+// HERO : image pleine largeur
+.menu-hero {
+  &__image {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+  }
+}
+//MENU : section principale
+.menu {
+  background-color: $color-background;
+  border-radius: 40px 40px 0 0; // coins arrondis en haut uniquement
+  margin-top: -40px; // remonte par-dessus l'image hero
+  position: relative;
+  padding: 32px 16px 40px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-family: $font-title;
+    font-size: 28px;
+  }
+
+  &__section {
+    margin-bottom: 32px;
+  }
+
+  &__section-title {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase; // transforme le texte en majuscules
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid $color-tertiary; // trait vert menthe sous le titre
+    display: inline-block; // le trait ne prend que la largeur du texte
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+// ITEM DE MENU
+.menu-item {
+  position: relative; // ancre le checkbox absolu
+  background-color: $color-white;
+  border-radius: $border-radius-card;
+  box-shadow: $shadow-card;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer; // indique que c'est cliquable
+  transition: box-shadow 250ms; // transition douce pour l'ombre au survol
+
+  &:hover {
+    box-shadow: $shadow-hover; // même variable que dans @mixin animate
+  }
+
+  //checkbox sert à déclencher l'animation de validation
+  &__checkbox {
+    position: absolute; // se superpose à tout l'item
+    inset: 0; // couvre toute la surface
+    opacity: 0; // invisible mais cliquable
+    cursor: pointer;
+    z-index: 2; // au-dessus du contenu pour capturer les clics
+    margin: 0;
+  }
+
+  // Zone blanche : info + prix
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    min-width: 0; // autorise le rétrécissement dans un contexte flex
+    transition: width 0.4s ease; // glisse vers la gauche au clic
+  }
+
+  &__info {
+    overflow: hidden;
+    flex: 1;
+    position: relative; // ancre le pseudo-élément de flou
+
+    // Fondu blanc sur le bord droit quand le texte déborde
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 100%;
+      background: linear-gradient(to right, transparent, $color-white);
+      pointer-events: none; // les clics passent à travers
+    }
+  }
+
+  &__name {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__description {
+    font-size: 13px;
+    font-weight: 300;
+    color: $color-icons;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__price {
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 16px;
+    flex-shrink: 0; // le prix ne se réduit jamais
+  }
+
+  // Zone verte : icône de validation
+  &__check {
+    background-color: $color-tertiary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0; // cachée par défaut
+    flex-shrink: 0;
+    border-radius: 0 16px 16px 0; // arrondi uniquement à droite
+    overflow: hidden; // masque l'icône quand la zone est trop petite
+    transition: width 0.4s ease; // se révèle progressivement
+
+    i {
+      color: $color-white; // icône blanche sur fond vert menthe
+      font-size: 20px;
+    }
+  }
+
+  // Animation déclenchée quand le checkbox est coché
+  // sélectionne les frères qui viennent APRÈS le checkbox dans le HTML
+  &__checkbox:checked ~ &__content {
+    width: calc(100% - 60px); // se rétracte vers la gauche
+  }
+
+  &__checkbox:checked ~ &__check {
+    width: 60px; // révèle la zone verte
+  }
+}
+
+// ── BOUTON COMMANDER : centré en bas ─────────────────────────────────
+.menu .btn {
+  @include btn;
+  display: block;
+  width: fit-content;
+  margin: 32px auto 0; // centré horizontalement
+}
+
+@media (min-width: $breakpoint-desktop) {
+  // Image hero plus haute sur grand écran
+  .menu-hero__image {
+    height: 400px;
+  }
+
+  .menu {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 48px 64px 64px;
+    background-color: $color-background; // carte grise sur fond blanc
+
+    &__title {
+      font-size: 34px;
+    }
+
+    &__section {
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      gap: 16px;
+    }
+  }
+
+  // Items légèrement plus grands
+  .menu-item {
+    &__name {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 14px;
+    }
+    &__price {
+      font-size: 16px;
+    }
+  }
+}
