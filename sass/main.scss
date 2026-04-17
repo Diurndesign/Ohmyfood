@@ -1,5 +1,5 @@
-// Le chef d'orchestre, il rassemble tout
-// C'est LUI qui décide de l'ordre d'importation des fichiers Sass
+// Le chef d'orchestre — il rassemble tout
+// C'est LUI qui sera compilé en main.css
 
 @use "variables";
 @use "mixins";
@@ -12,6 +12,6 @@
 @use "function";
 @use "restaurants";
 @use "card";
-@use "menu";
 
 @use "footer";
+@use "menu";

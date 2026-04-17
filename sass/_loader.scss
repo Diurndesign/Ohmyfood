@@ -12,47 +12,42 @@
   align-items: center;
   z-index: 999;
   animation: loader-fade 0.5s 2.5s forwards;
-  // après 2.5s, le loader disparaît progressivement en 0.5s.
-  //Forwards maintient l'état final après l'animation.
+}
 
-  // Wrapper logo + barre empilés verticalement
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
+// Wrapper logo + barre empilés verticalement
+.loader__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
 
-  &__logo {
-    width: 200px;
-    animation: logo-appear 1.2s 0.3s both;
-    // delay de 0.3s pour que le logo commence à apparaître juste avant la barre,
-    //both pour appliquer les styles de l'animation avant et après
-  }
+.loader__logo {
+  width: 200px;
+  animation: logo-appear 1.2s 0.3s both;
+}
 
-  // Piste de la barre (fond discret)
-  &__bar {
-    width: 200px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: rgba($color-primary, 0.2);
-    overflow: hidden;
+// Piste de la barre (fond discret)
+.loader__bar {
+  width: 200px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba($color-primary, 0.2);
+  overflow: hidden;
 
-    // Barre de remplissage animée
-    &::after {
-      // pseudo-élément pour la barre qui se remplit
-      content: ""; // nécessaire pour que le pseudo-élément soit créé.
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(to right, $color-secondary, $color-primary);
-      transform: scaleX(0); // la barre commence à 0% de sa largeur
-      transform-origin: left center;
-      animation: bar-fill 2s 0.5s ease-in-out forwards;
-    }
+  // Barre de remplissage animée
+  &::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, $color-secondary, $color-primary);
+    transform: scaleX(0);
+    transform-origin: left center;
+    animation: bar-fill 2s 0.5s ease-in-out forwards;
   }
 }
-// animation d'apparition du logo
+
 @keyframes logo-appear {
   0% {
     opacity: 0;
@@ -67,7 +62,7 @@
     transform: scale(1);
   }
 }
-// animation de disparition du loader
+
 @keyframes loader-fade {
   100% {
     opacity: 0;
@@ -77,12 +72,6 @@
 
 // Barre qui se remplit de gauche à droite
 @keyframes bar-fill {
-  from {
-    transform: scaleX(0);
-  } 
-  // réduit UNIQUEMENT la largeur, pas la hauteur
-  // commence à 0% de sa largeur
-  to {
-    transform: scaleX(1);
-  } // finit à 100% de sa largeur
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }

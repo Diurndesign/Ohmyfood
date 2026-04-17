@@ -1,13 +1,9 @@
 @use "variables" as *;
 
-// Animation de fondu pour l'ouverture d'une page menu
+// Fondu au chargement de chaque page (menu → accueil, accueil → menu)
 @keyframes page-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 html {
@@ -17,7 +13,7 @@ html {
 body {
   background-color: $color-background;
   font-family: $font-text;
-  min-height: 100vh; // garantit que le body prend au moins toute la hauteur de la fenêtre
+  min-height: 100vh;
 }
 
 // Sur desktop : fond blanc autour de la carte menu grise

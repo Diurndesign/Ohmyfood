@@ -32,6 +32,7 @@
     inset: 0;
     background: rgba(255, 255, 255, 0); // transparent par défaut
     transition: background-color 300ms;
+    pointer-events: none; // laisse passer les clics vers les éléments en dessous
   }
 
   &:hover::before {
@@ -59,7 +60,7 @@
   }
 
   // Checkbox invisible — couvre toute la surface du cœur
-  // Même technique que menu-item pour capter le clic sans interférer avec l'affichage
+  // Même technique que menu-item : CSS pur, pas de JS
   &__heart-checkbox {
     position: absolute;
     inset: 0; // couvre exactement le wrapper
@@ -91,8 +92,9 @@
     transition: clip-path 0.5s ease-in-out; // animation de révélation
   }
 
+  // Au survol : uniquement sur les vrais pointeurs (pas tactile)
+  // sans ce @media, le hover "colle" sur mobile et empêche de décocher
   @media (hover: hover) {
-    // cible les appareils qui supportent le hover (exclut les mobiles)
     &__heart-wrapper:hover &__heart--solid {
       clip-path: inset(0 0 0 0);
     }

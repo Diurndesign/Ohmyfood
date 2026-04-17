@@ -7,10 +7,10 @@
 
   &__heart-wrapper {
     display: inline-block;
-    z-index: 1; // ← passe au-dessus du ::before
+    z-index: 1; // ← passe au-dessus du ::after du lien étiré
   }
 
-  position: relative; // permet a l'élément d'être décalé par rapport à son emplacement normal
+  position: relative; //L'élément est positionné selon le flux normal du document
   border-radius: $border-radius-card;
   box-shadow: $shadow-card; // fait ressortir les cards restaurants.
   overflow: hidden; // intégration de l'image
@@ -18,8 +18,17 @@
 
   &__link {
     text-decoration: none;
-    color: inherit; // hérite de la couleur du parent (ici, le blanc de la card)
+    color: inherit; //hérite du noir du parent
     display: block;
+
+    // Lien étiré : le ::after couvre toute la card pour la rendre cliquable
+    // z-index: 0 = sous le cœur (z-index: 1) pour que le cœur reste cliquable
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
   }
 
   &__image {
@@ -61,7 +70,7 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
-  .card__link {
-    width: calc(50% - 50px);
+  .card {
+    width: calc(50% - 50px); // 2 cartes par ligne — était sur card__link quand il était le flex-child
   }
 }

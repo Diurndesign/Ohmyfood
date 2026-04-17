@@ -1,7 +1,8 @@
 @use "variables" as *;
 @use "mixins" as *;
+@use "sass:color"; // module officiel pour les fonctions couleur modernes
 
-// HEADER MENU : retour + logo centré
+// ── HEADER MENU : retour + logo centré ──────────────────────────────
 .header--menu {
   position: relative;
   display: flex;
@@ -17,7 +18,7 @@
   }
 }
 
-// HERO : image pleine largeur
+// ── HERO : image pleine largeur ──────────────────────────────────────
 .menu-hero {
   &__image {
     width: 100%;
@@ -25,7 +26,8 @@
     object-fit: cover;
   }
 }
-//MENU : section principale
+
+// ── MENU : section principale ────────────────────────────────────────
 .menu {
   background-color: $color-background;
   border-radius: 40px 40px 0 0; // coins arrondis en haut uniquement
@@ -35,13 +37,13 @@
 
   &__header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; // titre à gauche, cœur à droite
     align-items: center;
     margin-bottom: 24px;
   }
 
   &__title {
-    font-family: $font-title;
+    font-family: $font-title; // police Shrikhand
     font-size: 28px;
   }
 
@@ -52,7 +54,7 @@
   &__section-title {
     font-size: 14px;
     font-weight: 300;
-    text-transform: uppercase; // transforme le texte en majuscules
+    text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 12px;
     padding-bottom: 4px;
@@ -70,7 +72,7 @@
   }
 }
 
-// ITEM DE MENU
+// ── ITEM DE MENU ─────────────────────────────────────────────────────
 .menu-item {
   position: relative; // ancre le checkbox absolu
   background-color: $color-white;
@@ -78,30 +80,31 @@
   box-shadow: $shadow-card;
   display: flex;
   overflow: hidden;
-  cursor: pointer; // indique que c'est cliquable
-  transition: box-shadow 250ms; // transition douce pour l'ombre au survol
+  cursor: pointer;
+  transition: box-shadow 250ms;
 
   &:hover {
     box-shadow: $shadow-hover; // même variable que dans @mixin animate
   }
 
-  //checkbox sert à déclencher l'animation de validation
+  // ── Checkbox invisible qui couvre tout l'item ────────────────────
+  // Technique CSS pure : pas de JS — le :checked déclenche l'animation
   &__checkbox {
     position: absolute; // se superpose à tout l'item
-    inset: 0; // couvre toute la surface
+    inset: 0; // couvre toute la surface (top:0 right:0 bottom:0 left:0)
     opacity: 0; // invisible mais cliquable
     cursor: pointer;
     z-index: 2; // au-dessus du contenu pour capturer les clics
     margin: 0;
   }
 
-  // Zone blanche : info + prix
+  // ── Zone blanche : info + prix ──────────────────────────────────
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    width: 100%;
+    width: 100%; // prend toute la largeur par défaut
     min-width: 0; // autorise le rétrécissement dans un contexte flex
     transition: width 0.4s ease; // glisse vers la gauche au clic
   }
@@ -135,7 +138,7 @@
   &__description {
     font-size: 13px;
     font-weight: 300;
-    color: $color-icons;
+    color: color.adjust($color-footer, $lightness: 20%);
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -148,16 +151,16 @@
     flex-shrink: 0; // le prix ne se réduit jamais
   }
 
-  // Zone verte : icône de validation
+  // ── Zone verte : icône de validation ────────────────────────────
   &__check {
-    background-color: $color-tertiary;
+    background-color: $color-tertiary; // vert menthe #99e2d0
     display: flex;
     align-items: center;
     justify-content: center;
     width: 0; // cachée par défaut
     flex-shrink: 0;
     border-radius: 0 16px 16px 0; // arrondi uniquement à droite
-    overflow: hidden; // masque l'icône quand la zone est trop petite
+    overflow: hidden; // cache l'icône pendant que width = 0
     transition: width 0.4s ease; // se révèle progressivement
 
     i {
@@ -166,8 +169,8 @@
     }
   }
 
-  // Animation déclenchée quand le checkbox est coché
-  // sélectionne les frères qui viennent APRÈS le checkbox dans le HTML
+  // ── Animation : déclenchée quand le checkbox est coché ───────────
+  // ~ = sélectionne les frères qui viennent APRÈS le checkbox dans le HTML
   &__checkbox:checked ~ &__content {
     width: calc(100% - 60px); // se rétracte vers la gauche
   }
@@ -177,20 +180,57 @@
   }
 }
 
+// ── APPARITION PROGRESSIVE DES PLATS ────────────────────────────────
+@keyframes item-appear {
+  from {
+    opacity: 0;
+    transform: translateY(15px); // monte légèrement en apparaissant
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Tous les items démarrent invisibles
+.menu-item {
+  animation: item-appear 0.4s ease both;
+}
+
+// Décalage par section (Entrées → Plats → Desserts) et par item
+// @for génère automatiquement les règles sans répétition
+.menu__section {
+  @for $s from 1 through 3 {
+    &:nth-child(#{$s}) {
+      .menu-item {
+        @for $i from 1 through 4 {
+          &:nth-child(#{$i}) {
+            // section 1 item 1 = 0.1s, section 2 item 1 = 0.5s, etc.
+            animation-delay: #{($s - 1) * 0.4 + $i * 0.1}s;
+          }
+        }
+      }
+    }
+  }
+}
+
 // ── BOUTON COMMANDER : centré en bas ─────────────────────────────────
 .menu .btn {
-  @include btn;
+  @include btn;        // même taille / couleurs que le bouton de l'accueil
   display: block;
   width: fit-content;
   margin: 32px auto 0; // centré horizontalement
 }
 
+// ── DESKTOP ──────────────────────────────────────────────────────────
 @media (min-width: $breakpoint-desktop) {
+
   // Image hero plus haute sur grand écran
   .menu-hero__image {
     height: 400px;
   }
 
+  // Conteneur menu : carte blanche centrée sur fond gris
   .menu {
     max-width: 1000px;
     margin-left: auto;
@@ -213,14 +253,8 @@
 
   // Items légèrement plus grands
   .menu-item {
-    &__name {
-      font-size: 16px;
-    }
-    &__description {
-      font-size: 14px;
-    }
-    &__price {
-      font-size: 16px;
-    }
+    &__name        { font-size: 16px; }
+    &__description { font-size: 14px; }
+    &__price       { font-size: 16px; }
   }
 }

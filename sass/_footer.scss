@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: $breakpoint-tablet) {
   .footer {
     display: flex;
     flex-direction: row-reverse; // logo à droite, nav à gauche
@@ -53,5 +53,11 @@
 
   .footer__logo {
     padding-left: 40px; // espace entre le logo et le bord droit
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .footer {
+    padding: 24px 60px;
   }
 }

@@ -28,7 +28,7 @@
   }
 
   &__number {
-    position: absolute; // positionné par rapport à .function__step
+    position: absolute; //L'élément est retiré du flux normal du document
     left: -12px;
     top: 50%;
     transform: translateY(

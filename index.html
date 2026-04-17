@@ -17,16 +17,12 @@
   </head>
 
   <body>
-    <div class="loader">
-      <div class="loader__content">
-        <img
-          class="loader__logo"
-          src="./assets/images/logo/ohmyfood.png"
-          alt="Ohmyfood"
-        />
-        <div class="loader__bar"></div>
-      </div>
-    </div>
+<div class="loader">
+  <div class="loader__content">
+    <img class="loader__logo" src="./assets/images/logo/ohmyfood.png" alt="Ohmyfood" />
+    <div class="loader__bar"></div>
+  </div>
+</div>
     <header class="header">
       <img
         class="header__logo"
@@ -48,34 +44,34 @@
         <a class="btn" href="#restaurants">Explorer nos restaurants</a>
       </section>
 
-      <section class="function">
-        <div class="function__container">
-          <h2 class="function__title">Fonctionnement</h2>
-          <div class="function__step">
-            <span class="function__number">1</span>
-            <i class="fa-solid fa-mobile-screen-button function__icon"></i>
-            <p class="function__text">Choisissez un restaurant</p>
-          </div>
-
-          <div class="function__step">
-            <span class="function__number">2</span>
-            <i class="fa-solid fa-list-ul function__icon"></i>
-            <p class="function__text">Composez votre menu</p>
-          </div>
-
-          <div class="function__step">
-            <span class="function__number">3</span>
-            <i class="fa-solid fa-store function__icon"></i>
-            <p class="function__text">Dégustez au restaurant</p>
-          </div>
+<section class="function">
+  <div class="function__container">
+    <h2 class="function__title">Fonctionnement</h2>
+   <div class="function__step">
+          <span class="function__number">1</span>
+          <i class="fa-solid fa-mobile-screen-button function__icon"></i>
+          <p class="function__text">Choisissez un restaurant</p>
         </div>
-      </section>
+
+        <div class="function__step">
+          <span class="function__number">2</span>
+          <i class="fa-solid fa-list-ul function__icon"></i>
+          <p class="function__text">Composez votre menu</p>
+        </div>
+
+        <div class="function__step">
+          <span class="function__number">3</span>
+          <i class="fa-solid fa-store function__icon"></i>
+          <p class="function__text">Dégustez au restaurant</p>
+        </div>
+      </div>
+    </section>
 
       <section class="restaurants" id="restaurants">
         <h2 class="restaurants__title">Restaurants</h2>
 
-        <a href="./restaurants/la-palette-du-gout.html" class="card__link">
-          <article class="card">
+        <article class="card">
+          <a href="./restaurants/la-palette-du-gout.html" class="card__link">
             <img
               class="card__image"
               src="./assets/images/restaurants/la_palette_du_gout.jpg"
@@ -83,92 +79,92 @@
             />
             <span class="card__badge">Nouveau</span>
             <!-- card__badge : Nouveau restaurant -->
+          </a>
 
-            <div class="card__body">
-              <div class="card__info">
-                <!-- card__info : contient le nom et la localisation du restaurant -->
-                <h3 class="card__name">La palette du goût</h3>
-                <p class="card__location">Ménilmontant</p>
-              </div>
-
-              <div class="card__heart-wrapper">
-                <input type="checkbox" class="card__heart-checkbox" />
-                <i class="fa-regular fa-heart card__heart--outline"></i>
-                <i class="fa-solid fa-heart card__heart--solid"></i>
-              </div>
+          <div class="card__body">
+            <div class="card__info">
+              <!-- card__info : contient le nom et la localisation du restaurant -->
+              <h3 class="card__name">La palette du goût</h3>
+              <p class="card__location">Ménilmontant</p>
             </div>
-          </article>
-        </a>
 
-        <a href="./restaurants/la-note-enchantee.html" class="card__link">
-          <article class="card">
+            <div class="card__heart-wrapper">
+              <input type="checkbox" class="card__heart-checkbox" />
+              <i class="fa-regular fa-heart card__heart--outline"></i>
+              <i class="fa-solid fa-heart card__heart--solid"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="./restaurants/la-note-enchantee.html" class="card__link">
             <img
               class="card__image"
               src="./assets/images/restaurants/la_note_enchantee.jpg"
               alt="La note enchantée"
             />
             <span class="card__badge">Nouveau</span>
+          </a>
 
-            <div class="card__body">
-              <div class="card__info">
-                <h3 class="card__name">La note enchantée</h3>
-                <p class="card__location">Charonne</p>
-              </div>
-
-              <div class="card__heart-wrapper">
-                <input type="checkbox" class="card__heart-checkbox" />
-                <i class="fa-regular fa-heart card__heart--outline"></i>
-                <i class="fa-solid fa-heart card__heart--solid"></i>
-              </div>
+          <div class="card__body">
+            <div class="card__info">
+              <h3 class="card__name">La note enchantée</h3>
+              <p class="card__location">Charonne</p>
             </div>
-          </article>
-        </a>
 
-        <a href="./restaurants/a-la-francaise.html" class="card__link">
-          <article class="card">
+            <div class="card__heart-wrapper">
+              <input type="checkbox" class="card__heart-checkbox" />
+              <i class="fa-regular fa-heart card__heart--outline"></i>
+              <i class="fa-solid fa-heart card__heart--solid"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="./restaurants/a-la-francaise.html" class="card__link">
             <img
               class="card__image"
               src="./assets/images/restaurants/a_la_française.jpg"
               alt="À la française"
             />
+          </a>
 
-            <div class="card__body">
-              <div class="card__info">
-                <h3 class="card__name">A la francaise</h3>
-                <p class="card__location">Cité Rouge</p>
-              </div>
-
-              <div class="card__heart-wrapper">
-                <input type="checkbox" class="card__heart-checkbox" />
-                <i class="fa-regular fa-heart card__heart--outline"></i>
-                <i class="fa-solid fa-heart card__heart--solid"></i>
-              </div>
+          <div class="card__body">
+            <div class="card__info">
+              <h3 class="card__name">A la francaise</h3>
+              <p class="card__location">Cité Rouge</p>
             </div>
-          </article>
-        </a>
 
-        <a href="./restaurants/le-delice-des-sens.html" class="card__link">
-          <article class="card">
+            <div class="card__heart-wrapper">
+              <input type="checkbox" class="card__heart-checkbox" />
+              <i class="fa-regular fa-heart card__heart--outline"></i>
+              <i class="fa-solid fa-heart card__heart--solid"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="./restaurants/le-delice-des-sens.html" class="card__link">
             <img
               class="card__image"
               src="./assets/images/restaurants/Le_delice_des_sens.jpg"
               alt="Le délice des sens"
             />
+          </a>
 
-            <div class="card__body">
-              <div class="card__info">
-                <h3 class="card__name">Le délice des sens</h3>
-                <p class="card__location">Folie-Méricourt</p>
-              </div>
-
-              <div class="card__heart-wrapper">
-                <input type="checkbox" class="card__heart-checkbox" />
-                <i class="fa-regular fa-heart card__heart--outline"></i>
-                <i class="fa-solid fa-heart card__heart--solid"></i>
-              </div>
+          <div class="card__body">
+            <div class="card__info">
+              <h3 class="card__name">Le délice des sens</h3>
+              <p class="card__location">Folie-Méricourt</p>
             </div>
-          </article>
-        </a>
+
+            <div class="card__heart-wrapper">
+              <input type="checkbox" class="card__heart-checkbox" />
+              <i class="fa-regular fa-heart card__heart--outline"></i>
+              <i class="fa-solid fa-heart card__heart--solid"></i>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
 
