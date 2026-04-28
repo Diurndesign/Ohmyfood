@@ -28,12 +28,12 @@
   }
 
   &__number {
-    position: absolute; //L'élément est retiré du flux normal du document
+    position: absolute; // L'élément est retiré du flux normal du document
     left: -12px;
     top: 50%;
     transform: translateY(
       -50%
-    ); //modifie l'espace de coordonnées utilisé pour la mise en forme visuelle
+    ); // modifie l'espace de coordonnées utilisé pour la mise en forme visuelle
     width: 24px;
     height: 24px;
     background-color: $color-primary;

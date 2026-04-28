@@ -7,10 +7,10 @@
 
   &__heart-wrapper {
     display: inline-block;
-    z-index: 1; // ← passe au-dessus du ::after du lien étiré
+    z-index: 1; // passe au-dessus du ::after du lien étiré
   }
 
-  position: relative; //L'élément est positionné selon le flux normal du document
+  position: relative; // L'élément est positionné selon le flux normal du document
   border-radius: $border-radius-card;
   box-shadow: $shadow-card; // fait ressortir les cards restaurants.
   overflow: hidden; // intégration de l'image
@@ -18,7 +18,7 @@
 
   &__link {
     text-decoration: none;
-    color: inherit; //hérite du noir du parent
+    color: inherit; // hérite du noir du parent
     display: block;
 
     // Lien étiré : le ::after couvre toute la card pour la rendre cliquable
@@ -34,7 +34,7 @@
   &__image {
     width: 100%;
     height: 175px;
-    object-fit: cover; //Le contenu remplacé est redimensionné
+    object-fit: cover; // Le contenu remplacé est redimensionné
   }
 
   &__badge {
