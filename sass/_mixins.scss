@@ -60,7 +60,7 @@
   }
 
   // Checkbox invisible — couvre toute la surface du cœur
-  // Même technique que menu-item : CSS pur, pas de JS
+  // Même technique que menu-item : CSS
   &__heart-checkbox {
     position: absolute;
     inset: 0; // couvre exactement le wrapper

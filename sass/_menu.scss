@@ -113,18 +113,8 @@
     overflow: hidden;
     flex: 1;
     position: relative; // ancre le pseudo-élément de flou
-
-    // Fondu blanc sur le bord droit quand le texte déborde
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 40px;
-      height: 100%;
-      background: linear-gradient(to right, transparent, $color-white);
-      pointer-events: none; // les clics passent à travers
-    }
+    min-width: 0;
+    width: 0;
   }
 
   &__name {
@@ -133,6 +123,7 @@
     margin: 0 0 4px;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__description {
@@ -140,8 +131,9 @@
     font-weight: 300;
     color: color.adjust($color-footer, $lightness: 20%);
     margin: 0;
-    white-space: nowrap;
+    white-space: nowrap; // empêche le texte de faire plusieurs lignes
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__price {
